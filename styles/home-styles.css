@@ -89,6 +89,8 @@ section {
 
 #banner {
   background-image: url("../images/panda-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #button-wrapper a {
