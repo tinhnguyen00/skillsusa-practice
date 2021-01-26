@@ -7,66 +7,8 @@ body {
   width: 100%;
 }
 
-/* header styles */
-header {
-  height: 100px;
-  width: 100%;
-  background-color: red;
-  display: flex;
-  position: fixed;
-  z-index: 3;
-}
-
-nav {
-  height: 100px;
-  width: 30%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 2em;
-  font-family: 'Montserrat', sans-serif;
-}
-
-#menu-wrapper {
-  padding: 35px;
-}
-
-#menu-wrapper:hover #sub-menu {
-  display: block;
-  animation: slide-in .4s forwards;
-}
-
-#about-wrapper:hover #sub-about {
-  display: block;
-  animation: slide-in .4s forwards;
-}
-
-#sub-menu, #sub-about {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 100px;
-  background-color: whitesmoke;
-  width: 100%;
-  z-index: -5;
-  height: 200px;
-  overflow: hidden;
-  opacity: .99;
-}
-
-@keyframes slide-in {
-  0% {top: 0; opacity: 0;}
-  40% {opacity: 0;}
-  100% {top: 100px; opacity: 1;}
-  
-}
-
 /* main styles */
+
 main {
   height: 100%;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -75,7 +17,6 @@ main {
 section {
   width: 100%;
   height: 50vh;
-  
   border-bottom: 1px white solid;
 }
 
@@ -89,8 +30,8 @@ section {
 
 #banner {
   background-image: url("../images/panda-banner.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #button-wrapper a {
@@ -164,150 +105,15 @@ section {
   }
 }
 
-/*social media styles*/
-#social-media {
-  background-color: aliceblue;
-  height: auto;
-  padding-bottom: 20px;
-}
-
-#social-media > h2 {
-  margin: 0;
-  text-align: center;
-  font-size: 2.5em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#social-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 80%;
-}
-
-.social-card {
-  background-color: red;
-  width: 20%;
-  padding-top: 20%;
-  position: relative; 
-}
-
-.social-card-overlay {
-  background-color: rgba(0, 0, 0, .5);
-  width: 100%;
-  height: 100%;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  vertical-align: middle;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  opacity: 0;
-  transition: ease-in .5s;
-}
-
-.social-card-overlay div {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.social-card > i {
-  color: white;
-  font-size: 50px;
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
-}
-
-.social-card:hover .social-card-overlay {
-  opacity: 1;
-}
-
-.social-card:hover > .social-card-overlay div {
-  animation: slide .5s forwards;
-}
-
-@keyframes slide {
-  0% {top: 0; opacity: 0;}
-  100% {opacity: 1;}
-  
-}
-
-#twitter {
-  background-image: url("../images/social1.jpeg");
-}
-
-#facebook {
-  background-image: url("../images/social2.jpg");
-}
-
-#instagram {
-  background-image: url("../images/social3.jpg");
-}
-
-#youtube {
-  background-image: url("../images/social4.jpg");
-}
-
-#twitter, #facebook, #instagram, #youtube {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.social-card a {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  text-decoration: none;
-}
-
-
-/* footer styles */
-footer {
-  height: 200px;
-  width: 100%;
-}
-
-#footer-spacer-mobile {
-  width: 100%;
-  height: 100px;
-  display: none;
-}
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
   body {
     font-size: .5em;
     text-align: center;
   }
-
   header {
     position: fixed;
     bottom: 0;
   }
-
-  .social-card {
-    width: 100%;
-    padding-top: 100%;
-  }
-
-  #social-media {
-    height: 100%;
-  }
-  #social-wrapper {
-    flex-direction: column;
-    position: relative;
-    margin: auto;
-  }
-
   #welcome {
     width: 100%;
     float: none;
@@ -316,46 +122,36 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
-    
   }
-
   #button-wrapper {
     display: flex;
     justify-content: space-evenly;
   }
-
   #banner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   #order {
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
   }
-
   #order-text {
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
   }
-
   #order-text a {
     margin-left: 0;
   }
-
   .spacer {
     display: none;
   }
-
   #footer-spacer-mobile {
     display: block;
   }
-
 }
 
 @media screen and (max-width: 1000px) and (min-width:481px) {
@@ -363,11 +159,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
   .social-card {
     width: 100%;
     padding-top: 100%;
   }
 }
-
-/* test */

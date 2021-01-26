@@ -1,0 +1,66 @@
+/* header/nav styles */
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  position: fixed;
+  z-index: 3;
+}
+
+nav {
+  height: 100px;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#menu-wrapper, #about-wrapper {
+  padding: 35px;
+}
+
+#menu-wrapper:hover #sub-menu {
+  display: block;
+  animation: slide-in .4s forwards;
+}
+
+#about-wrapper:hover #sub-about {
+  display: block;
+  animation: slide-in .4s forwards;
+}
+
+#sub-menu, #sub-about {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  background-color: whitesmoke;
+  width: 100%;
+  z-index: -5;
+  height: 200px;
+  overflow: hidden;
+  opacity: .99;
+}
+
+@keyframes slide-in {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    top: 100px;
+    opacity: 1;
+  }
+}

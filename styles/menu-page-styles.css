@@ -1,5 +1,6 @@
 body {
   margin: 0px;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
 #grid-wrapper {
@@ -7,10 +8,14 @@ body {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-
 }
 
-#grid-wrapper img{
+#grid-wrapper img {
   height: 100%;
   width: 25%;
+}
+
+.spacer {
+  height: 100px;
+  width: 100%;
 }
