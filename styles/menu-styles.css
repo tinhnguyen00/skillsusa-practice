@@ -1,0 +1,16 @@
+body {
+  margin: 0px;
+}
+
+#grid-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+
+}
+
+#grid-wrapper img{
+  height: 100%;
+  width: 25%;
+}
