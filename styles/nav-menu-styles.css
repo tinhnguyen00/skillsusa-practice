@@ -22,6 +22,18 @@ nav a {
   text-decoration: none;
   font-size: 2em;
   font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+
+nav a > i {
+  color: black;
+  opacity: 50%;
+  position: absolute;
+  font-size: 2em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 #menu-wrapper, #about-wrapper {
